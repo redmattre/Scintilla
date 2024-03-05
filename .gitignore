@@ -125,3 +125,12 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# media
+.mov
+.mp4
+.wav
+.aif
+.aiff
+.mp3
+.flac
