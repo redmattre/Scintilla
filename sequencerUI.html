@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="sequencerUI.css">
+</head>
+<body>
+    <div class="canvas" id="canvas">
+        <!-- This is where we'll draw points -->
+        <div class="background-circle"></div>
+    </div>
+    <div class="bottoniera">
+        <input type="range" id="circle-size-slider" min="100" max="600" value="500" class="slider">
+
+        <!-- <button><a id="downloadAnchorElem">download</a></button> -->
+        <button id="startButton">Start</button>
+        <button id="square-button" class="shape-button">
+            <div id="square" class="fakepoint"></div>
+        </button>
+        <button id="triangle-button" class="shape-button">
+            <div id="triangle" class="fakepoint"></div>
+        </button>
+        <button id="circle-button" class="shape-button">
+            <div id="circle" class="fakepoint"></div>
+        </button>
+        <button id="ninja-button" class="shape-button">
+            <div id="ninja" class="fakepoint"></div>
+        </button>
+        <button id="clearButton">Clear</button>
+    </div>
+    
+    <div class="coordinates">
+        <ul id="coordinatesList">
+            <!-- Coordinates will be listed here -->
+        </ul>
+    </div>
+    <script src="sequencerUI.js"></script>
+</body>
+</html>

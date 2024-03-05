@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 95vh;
+    height: 95vh;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 800;
+}
+
+.fakepoint{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 800;
+}
+
+#square{
+    background-color: red;
+}
+
+#triangle{
+    background-color: rgb(255, 187, 0);
+}
+
+#circle{
+    background-color: rgb(0, 13, 196);
+}
+
+#ninja{
+    background-color: green;
+}
+
+.cursor {
+    width: 10px; /*  da vedere se nel js aggiungi px o vh */
+    height: 10px;
+    background-color: rgb(255, 251, 0);
+    border: 0.5px solid black;
+    position: absolute;
+    z-index: 900;
+}
+
+.coordinates {
+    border: 1px solid black;
+    width: 60vh;
+    height: 30vh;
+    font-size: small;
+    overflow: scroll;
+    border-radius: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+button{
+    height: 5vh;
+    width: 50px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: border 1s ease;
+}
+
+button:hover{
+    height: 5vh;
+    width: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.shape-button{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottoniera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    position: absolute;
+    border: 1px solid black;
+    transform-origin: left center;
+    z-index: 0;
+}
+
+.background-circle {
+    width: 100%; /* Set the width to 100% to cover the entire canvas */
+    height: 100%; /* Set the height to 100% to cover the entire canvas */
+    background-color: transparent; /* Make the circle transparent in the middle */
+    border: 1px solid rgba(0, 0, 0, 0.15); /* Add a 1px black border */
+    border-radius: 50%; /* Make it a circle using border-radius */
+    position: absolute; /* Position it absolutely within the canvas */
+}
+
+.slider {
+  /* width: 20px;
+  height: 150px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s; */
+  background: #d3d3d3;
+  border-radius: 25%;
+  margin-bottom: 100px;
+  appearance: none;
+  height: 10px;
+  width: 150px;
+  transform: rotate(270deg); /* Rotate the slider vertically */
+  /* position: relative; */
+  top: 20px; /* Adjust the vertical position as needed */
+  left: 10px; /* Adjust the horizontal position as needed */
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: border 1.5s;
+}
+
+.slider:hover{
+    border: 1px solid black;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: black; /* Green background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+  transition: all 3s;
+}
